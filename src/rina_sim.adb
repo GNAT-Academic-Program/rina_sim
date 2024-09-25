@@ -14,17 +14,17 @@ with Gdk.Event;
 with Event_Handlers;
 with Gtk.GEntry;
 
-procedure Rina_Simulator is
+procedure Rina_Sim is
    Builder : Gtkada.Builder.Gtkada_Builder;
    Window  : Gtk.Window.Gtk_Window;
    Error   : aliased Glib.Error.GError;
 
-   Network_Topology : Gtk.Drawing_Area.Gtk_Drawing_Area;
-   Spawn_Button     : Gtk.Button.Gtk_Button;
-   Despawn_Button   : Gtk.Button.Gtk_Button;
+   Network_Topology   : Gtk.Drawing_Area.Gtk_Drawing_Area;
+   Spawn_Button       : Gtk.Button.Gtk_Button;
+   Despawn_Button     : Gtk.Button.Gtk_Button;
    Create_Link_Button : Gtk.Button.Gtk_Button;
    Delete_Link_Button : Gtk.Button.Gtk_Button;
-   Machine_Entry    : Gtk.GEntry.Gtk_Entry;
+   Machine_Entry      : Gtk.GEntry.Gtk_Entry;
 
 begin
    Gtk.Main.Init;
@@ -90,4 +90,4 @@ begin
    Window.Show_All;
 
    Gtk.Main.Main;
-end Rina_Simulator;
+end Rina_Sim;
